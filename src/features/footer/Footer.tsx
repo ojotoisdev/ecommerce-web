@@ -1,7 +1,7 @@
 
 import './Footer.css'
 import facebook from '../../assets/facebook.png'
-import twitter from "../../assets/Twitter.png"
+import twitter from "../../assets/twitter.png"
 import a from "../../assets/a.png"
 const Footer = () => {
   return (
