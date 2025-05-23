@@ -3,7 +3,7 @@ import call from "../../assets/call.png";
 import a from "../../assets/a.png";
 import play from "../../assets/play.png";
 import facebook from "../../assets/facebook.png";
-import twitter from "../../assets/Twitter.png";
+import twitter from "../../assets/twitter.png";
 import search from "../../assets/search.png";
 import cart from "../../assets/cart.png";
 import react from "../../assets/react.png";
