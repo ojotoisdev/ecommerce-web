@@ -1,4 +1,4 @@
-import './posts.css';
+import './Posts.css';
 import timer from '../../assets/timer.png';
 import comment from '../../assets/comment.png';
 
