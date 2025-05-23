@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import call from "../../assets/call.png";
 import a from "../../assets/a.png";
 import play from "../../assets/play.png";
