@@ -1,0 +1,368 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Happy+Monkey&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+/* ===== Global Styles ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 100%;
+}
+
+.icon-bar{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* ===== Header Section ===== */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Overwrites earlier justify-content: center */
+    align-items: center;
+    background-color: #23856D;
+    height: 58px;
+    padding: 0 100px;
+}
+
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-icon ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.nav-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Paragraph styling */
+p {
+    height: 24px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== Navbar Section ===== */
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Overwrites earlier justify-content: center */
+    align-items: center;
+    padding: 0 100px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-menu h1 {
+    width: 108px;
+    height: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #737373;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-links li select {
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #252B42;
+}
+
+/* ===== Authentication Button ===== */
+.authentication {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.authentication button {
+    width: 166px;
+    height: 54px;
+    padding: 15px;
+    border-radius: 37px;
+    border: none;
+    color: #23A6F0;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== Furniture Items and Menus ===== */
+.furniture-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.menu-categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.items-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+/* === Menu One === */
+.menu-one {
+    background-image: url('/src/assets/media.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 616px;
+    width: 452px;
+    padding: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-one h1 {
+    margin-bottom: 5px;
+    color: #252B42;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+}
+
+.menu-one h5 {
+    color: #2DC071;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px; /* fixed comma to dot */
+    font-size: 14px;
+}
+
+/* === Menu Two === */
+.menu-two {
+    background-image: url('/src/assets/media-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 679px;
+    height: 300px;
+    padding: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-two h1 {
+    margin-bottom: 5px;
+    color: #252B42;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+    letter-spacing: 0.1px;
+}
+
+.menu-two h5 {
+    color: #2DC071;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px; 
+    font-size: 14px;
+}
+
+/* === Menu Three === */
+.menu-three {
+    background-image: url('/src/assets/media-cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 332px;
+    height: 300px;
+    padding: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-three h1 {
+    margin-bottom: 5px;
+    color: #252B42;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+    letter-spacing: 0.1px;
+}
+
+.menu-three h5 {
+    color: #2DC071;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px; /* fixed comma to dot */
+    font-size: 14px;
+}
+
+/* === Menu Four === */
+.menu-four {
+    background-image: url('/src/assets/bg-cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 332px;
+    height: 300px;
+    padding: 24px;
+}
+
+.menu-four h1 {
+    margin-bottom: 5px;
+    color: #252B42;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+    letter-spacing: 0.1px;
+}
+
+.menu-four h5 {
+    color: #2DC071;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px; /* fixed comma to dot */
+    font-size: 14px;
+}
+
+/* ===== Shared styles for menus and buttons ===== */
+.menu-one,
+.menu-two,
+.menu-three,
+.menu-four,
+button {
+    border: none;
+    color: #252B42;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+/* Tablet and smaller: stack sections */
+@media (max-width: 768px) {
+    .Navbar h5{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .icon-bar{
+        display: block;
+    }
+    
+    /* Hide the desktop nav links on mobile */
+    
+
+    /* Show icon-bar nav links as column */
+    .icon-bar ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0;
+    }
+
+    .icon-bar a {
+        color: #737373;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    
+    .Navbar ul {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .furniture-items,
+    .menu-categories,
+    .items-menu {
+        flex-direction: column;
+    }
+    .header{
+        display: none;
+    }
+    .menu-one{
+        width: 323px;
+        height: 300px;
+    }
+    .menu-two{
+        width: 323px;
+        height: 300px;
+    }
+}
+

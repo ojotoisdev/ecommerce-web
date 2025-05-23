@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Happy+Monkey&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+/* Container for all posts */
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+/* Heading section */
+.post-heading {
+  text-align: center;
+}
+
+.post-heading h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #23A6F0;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.post-heading h2 {
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  margin-bottom: 0;
+}
+
+/* Wrapper for all post cards */
+.post-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 80px;
+  flex-wrap: wrap; /* optional if you want responsiveness */
+}
+
+/* Each individual post card */
+.post-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  background-color: #fff;
+  padding-bottom: 30px;
+  width: 360px; /* Slightly bigger than image to add some padding */
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Post images with overlay label */
+.post-image, 
+.post-image-two, 
+.post-image-three {
+  width: 348px;
+  height: 300px;
+  padding: 1.5rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Specific background images */
+.post-image {
+  background-image: url('/src/assets/unsplash.png');
+}
+
+.post-image-two {
+  background-image: url('/src/assets/unsplashten.png');
+}
+
+.post-image-three {
+  background-image: url('/src/assets/unsplash-three.png');
+}
+
+/* New label on image */
+.post-image h6, 
+.post-image-two h6, 
+.post-image-three h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  background-color: #E74040;
+  width: 58px;
+  height: 24px;
+  margin: 0;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+/* Tags below image */
+.post-tags {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-right: 100px;
+  flex-wrap: wrap; /* for responsiveness */
+}
+
+.post-tags a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  line-height: 16px;
+  color: #737373;
+  text-decoration: none;
+}
+
+#google {
+  color: #8EC2F2;
+}
+
+/* Post content section */
+.post-content {
+  width: 100%;
+}
+
+.post-content h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  margin-top: 10px;
+  padding-left: 43px;
+  color: #252B42;
+  margin-bottom: 0;
+}
+
+.post-content h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-top: 20px;
+  padding-left: 43px;
+  margin-bottom: 0;
+}
+
+/* Meta info (date, comments) */
+.post-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.meta-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.meta-item h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+/* Footer with Learn More button */
+.post-footer {
+  margin-top: 20px;
+  margin-left: 43px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-footer button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: color 0.3s ease;
+}
+
+.post-footer button:hover {
+  color: #23A6F0;
+}
