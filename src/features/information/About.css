@@ -84,3 +84,14 @@
         margin-left: 30px;
     }
 }
+@media (max-width: 768px){
+    .images{
+        
+        margin-left: 30px;
+    }
+    .images img{
+        width: 100px;
+        height: 100px;
+    }
+
+}

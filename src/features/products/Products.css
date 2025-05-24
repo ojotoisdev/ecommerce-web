@@ -47,9 +47,10 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-columns: repeat(5,1fr);
-    gap: 5;
+    
+    
 
-    margin-top: 80px;
+    
 }
 
 /* ===== Product image styling ===== */
@@ -124,7 +125,7 @@ span strong {
 }
 @media (max-width: 1024px) {
   .Featured-products {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 

@@ -15,9 +15,7 @@ body {
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
 }
-.container{
-    width: 100%;
-}
+
 
 .icon-bar{
     font-size: 1.5rem;
@@ -317,6 +315,55 @@ button {
 }
 
 /* Tablet and smaller: stack sections */
+@media (max-width: 480px) {
+    .Navbar h5{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .icon-bar{
+        display: block;
+    }
+    
+    /* Hide the desktop nav links on mobile */
+    
+
+    /* Show icon-bar nav links as column */
+    .icon-bar ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0;
+    }
+
+    .icon-bar a {
+        color: #737373;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    
+    .Navbar ul {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .furniture-items,
+    .menu-categories,
+    .items-menu {
+        flex-direction: column;
+    }
+    .header{
+        display: none;
+    }
+    .menu-one{
+        width: 323px;
+        height: 300px;
+    }
+    .menu-two{
+        width: 323px;
+        height: 300px;
+    }
+}
+
 @media (max-width: 768px) {
     .Navbar h5{
         font-size: 2rem;
@@ -363,6 +410,9 @@ button {
     .menu-two{
         width: 323px;
         height: 300px;
+    }
+    .authentication button{
+        display: none;
     }
 }
 

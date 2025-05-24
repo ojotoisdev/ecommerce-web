@@ -130,7 +130,7 @@ const Posts = () => {
           </div>
 
           <div className="post-footer">
-            <button type="button">Learn  </button>
+            <button type="button">Learn More </button>
             <img src="" alt="" />
           </div>
         </div>
