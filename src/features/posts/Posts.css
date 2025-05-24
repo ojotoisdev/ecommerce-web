@@ -193,8 +193,15 @@
   margin-left: 43px;
   width: 100%;
   display: flex;
+  
   align-items: center;
   gap: 10px;
+}
+.none img{
+  width:9.616573333740234px;
+  height: 16px;
+  margin-left: 5px;
+  padding-top: 5px;
 }
 
 .post-footer button {
@@ -222,5 +229,10 @@
   .post-card{
     width: 300px;
     height: 700px;
+  }
+  .post-meta{
+    display: flex;
+    padding-left: 20px;
+    gap: 9px;
   }
 }

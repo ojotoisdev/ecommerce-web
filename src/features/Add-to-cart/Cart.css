@@ -61,3 +61,19 @@ span{
     letter-spacing: 0.2px;
     font-family: 'Montserrat', sans-serif;
 }
+@media (max-width: 480px) {
+    
+    .Cart h2{
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.2px;
+        
+    }
+    .Cart h5{
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

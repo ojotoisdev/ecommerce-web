@@ -1,18 +1,19 @@
 import './Posts.css';
+
 import timer from '../../assets/timer.png';
 import comment from '../../assets/comment.png';
-
+import none from '../../assets/@none.png';
 
 const Posts = () => {
   return (
     <div className="post">
-      {/* Section Heading */}
+      {/* === Section Heading === */}
       <div className="post-heading">
         <h6>Practice Advice</h6>
         <h2>Featured Posts</h2>
       </div>
 
-      {/* All Post Cards */}
+      {/* === All Post Cards === */}
       <div className="post-categories">
 
         {/* === Post Card 1 === */}
@@ -22,9 +23,9 @@ const Posts = () => {
           </div>
 
           <div className="post-tags">
-            <a id="google" href="">Google</a>
-            <a href="">Trending</a>
-            <a href="">New</a>
+            <a id="google" href="#">Google</a>
+            <a href="#">Trending</a>
+            <a href="#">New</a>
           </div>
 
           <div className="post-content">
@@ -50,8 +51,9 @@ const Posts = () => {
           </div>
 
           <div className="post-footer">
-            <button type="button">Learn More</button>
-            <img src="" alt="" />
+            <button type="button">
+              Learn More <span className="none"><img src={none} alt="arrow" /></span>
+            </button>
           </div>
         </div>
 
@@ -62,9 +64,9 @@ const Posts = () => {
           </div>
 
           <div className="post-tags">
-            <a id="google" href="">Google</a>
-            <a href="">Trending</a>
-            <a href="">New</a>
+            <a id="google" href="#">Google</a>
+            <a href="#">Trending</a>
+            <a href="#">New</a>
           </div>
 
           <div className="post-content">
@@ -90,8 +92,9 @@ const Posts = () => {
           </div>
 
           <div className="post-footer">
-            <button type="button">Learn More</button>
-            <img src="" alt="" />
+            <button type="button">
+              Learn More <span className="none"><img src={none} alt="arrow" /></span>
+            </button>
           </div>
         </div>
 
@@ -102,9 +105,9 @@ const Posts = () => {
           </div>
 
           <div className="post-tags">
-            <a id="google" href="">Google</a>
-            <a href="">Trending</a>
-            <a href="">New</a>
+            <a id="google" href="#">Google</a>
+            <a href="#">Trending</a>
+            <a href="#">New</a>
           </div>
 
           <div className="post-content">
@@ -130,11 +133,12 @@ const Posts = () => {
           </div>
 
           <div className="post-footer">
-            <button type="button">Learn More </button>
-            <img src="" alt="" />
+            <button type="button">
+              Learn More <span className="none"><img src={none} alt="arrow" /></span>
+            </button>
           </div>
         </div>
-        
+
       </div>
     </div>
   );
