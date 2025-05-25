@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 
+// === Assets ===
 import call from "../../assets/call.png";
 import a from "../../assets/a.png";
 import play from "../../assets/play.png";
@@ -9,7 +10,10 @@ import twitter from "../../assets/twitter.png";
 import search from "../../assets/search.png";
 import cart from "../../assets/cart.png";
 import react from "../../assets/react.png";
+import mobileIcon from "../../assets/icn shopping-cart .icn-xs.png";
+import searchMobile from "../../assets/icn search .icn-xs.png";
 
+// === Styles ===//updated
 import './ExploreMenu.modulus.css';
 
 const ExploreMenu = () => {
@@ -37,7 +41,7 @@ const ExploreMenu = () => {
           <p>Follow Us :</p>
           <div className="links">
             <a href="#"><img src={a} alt="Instagram" /></a>
-            <a href="#"><img src={play} alt="Play" /></a>
+            <a href="#"><img src={play} alt="Play Store" /></a>
             <a href="#"><img src={facebook} alt="Facebook" /></a>
             <a href="#"><img src={twitter} alt="Twitter" /></a>
           </div>
@@ -47,7 +51,15 @@ const ExploreMenu = () => {
       {/* === Navbar Section === */}
       <nav className="Navbar">
         <div className="nav-head">
-          <h5>Bandage</h5>
+          <div><h5>Bandage</h5></div>
+
+          <div className="mobile-icons">
+            <div className="icons">
+              <img src={searchMobile} alt="Search" />
+              <img src={mobileIcon} alt="Cart" />
+            </div>
+          </div>
+
           <div className="icon-bar" onClick={toggleMenu}>
             <HiOutlineBars3BottomRight />
           </div>
@@ -78,25 +90,28 @@ const ExploreMenu = () => {
           <div className="icons">
             <img src={search} alt="Search" />
             <img src={cart} alt="Cart" />
-            <img src={react} alt="React" />
+            <img src={react} alt="React Logo" />
           </div>
         </div>
       </nav>
 
       {/* === Furniture Menu Section === */}
-      <section className="furniture-items">
+      <section className={`furniture-items ${menuOpen ? "menu-open" : ""}`}>
+        {/* Menu Section One */}
         <div className="menu-one">
           <h5>5 items</h5>
           <h1>FURNITURE</h1>
           <button>Read More</button>
         </div>
 
+        {/* Menu for Mobile */}
         <div className="menu-mobile">
           <h5>5 items</h5>
           <h1>FURNITURE</h1>
           <button>Read More</button>
         </div>
 
+        {/* More Menu Categories */}
         <div className="menu-categories">
           <div className="menu-two">
             <h5>5 items</h5>

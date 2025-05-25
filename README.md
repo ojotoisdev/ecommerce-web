@@ -52,3 +52,50 @@ export default tseslint.config({
   },
 })
 ```
+ ## E-Commerce App
+ ## Overview
+
+- This is a modern e-commerce web application built with React, Vite, and TypeScript. It features product listings, shopping cart functionality, and responsive design for mobile, tablet, and desktop.
+
+ ## Technology Stack
+
+
+1. React with Vite and TypeScript
+
+ 2. CSS Modules for styling
+
+3. Redux Toolkit for state management
+
+ 4. Redux Toolkit Query (RTK Query) for API integration
+
+## Features
+
+ - Product browsing with dynamic loading
+
+ - Shopping cart with add/remove items
+
+ - Responsive design for all screen sizes
+
+ - State management with Redux Toolkit
+
+ - Data fetching with RTK Query
+
+ ### Getting Started
+ - Clone the repo:
+
+
+`
+git clone <repository-url>
+cd <project-folder>`
+
+ ### Install dependencies:
+
+
+`npm install`
+
+`Run the app:`
+
+`npm run dev`
+
+`Open http://localhost:3000 in your browser.`
+

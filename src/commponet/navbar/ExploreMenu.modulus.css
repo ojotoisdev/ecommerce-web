@@ -35,11 +35,14 @@ p {
 /* ===== Header Section ===== */
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #23856D;
   height: 58px;
+  margin-bottom: 20px;
   padding: 0 100px;
+  
 }
 
 .header-menu,
@@ -68,16 +71,28 @@ p {
   text-decoration: none;
 }
 
-/* ===== Navbar Section ===== */
+/* ===== Navbar Section ===== 
 .Navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 30px;
+  gap: 100px;
+  width: 100%;
   background-color: #FFFFFF;
+  padding: 0 100px;
   margin-bottom: 20px;
+  
+}*/
+.Navbar {
+  display: flex;
+  justify-content: space-between; /* separates left and right sides */
+  align-items: center;
+  
+  padding: 0 clamp(1rem, 5vw, 6rem);
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
 }
+
 
 .Navbar h5 {
   font-weight: 700;
@@ -85,12 +100,16 @@ p {
   letter-spacing: 0.1px;
   font-size: 24px;
   color: #252B42;
+  
 }
 
 .nav-links {
   display: flex;
   gap: 20px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+
 }
 
 .nav-links ul {
@@ -128,13 +147,13 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 70px;
+  gap: 20px;
 }
 
 .authentication button {
   width: 166px;
   height: 54px;
-  padding: 15px;
+  
   border-radius: 37px;
   border: none;
   color: #23A6F0;
@@ -263,6 +282,8 @@ button {
   letter-spacing: 0.2px;
 }
 
+
+
 /* ===== Mobile Styles ===== */
 @media (max-width: 480px) {
   .Navbar h5 {
@@ -317,11 +338,15 @@ button {
 
 /* ===== Tablet Styles ===== */
 @media (max-width: 768px) {
-  .Navbar h5 {
+    
+  
+    .Navbar h5 {
     font-size: 24px;
     text-align: center;
     margin-right: 60px;
-  }
+    margin-left: 70px;
+
+ }
 
   .nav-head {
     display: flex;
@@ -346,6 +371,7 @@ button {
 
   .Navbar {
     display: flex;
+    margin: auto;
     justify-content: center;
     align-items: center;
     position: relative;
