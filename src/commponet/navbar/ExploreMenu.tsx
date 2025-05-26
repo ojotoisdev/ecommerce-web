@@ -66,7 +66,7 @@ const ExploreMenu = () => {
         </div>
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li><a href="">Home</a></li>
+          <li className="mobile-only"><a href="">Home</a></li>
           <li>
             <select className="hide-on-mobile" name="shop" id="shop">
               <option value="">Shop</option>
@@ -82,7 +82,7 @@ const ExploreMenu = () => {
           <li className="hide-on-mobile"><a href="">Blog</a></li>
           <li className="hide-on-mobile"><a href="">Pages</a></li>
 
-          <li><a href="">Contact</a></li>
+          <li className="mobile-only"><a href="">Contact</a></li>
         </ul>
 
         <div className="authentication">
