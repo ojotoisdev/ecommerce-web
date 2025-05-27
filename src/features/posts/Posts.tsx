@@ -10,7 +10,8 @@ const Posts = () => {
       {/* === Section Heading === */}
       <div className="post-heading">
         <h6>Practice Advice</h6>
-        <h2>Featured Posts</h2>
+        <h2 className='desktop'>Featured Posts</h2>
+        <h2 className='On-mobile'>Featured <br /> Products</h2>
       </div>
 
       {/* === All Post Cards === */}
@@ -69,7 +70,7 @@ const Posts = () => {
             <a href="#">New</a>
           </div>
 
-          <div className="post-content">
+          <div  className="post-content">
             <h4>
               Loudest à la Madison #1 <br /> (L'intégral)
             </h4>

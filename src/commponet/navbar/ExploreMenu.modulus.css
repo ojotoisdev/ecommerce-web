@@ -90,7 +90,7 @@ p {
   justify-content: space-between; /* separates left and right sides */
   align-items: center;
   width: 100%;
-  padding: 80px;
+  padding: 50px;
   padding-left: 100px;
   padding-right: 100px;
   margin-bottom: 10px;
@@ -289,10 +289,20 @@ button {
 
 
 
-/* ===== Tablet Styles ===== */
+
 @media (max-width: 480px) {
     
-  
+  .header {
+    
+    
+    height: auto;
+    display: none;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping if space gets tight */
+    gap: 10px;
+  }
     .Navbar h5 {
     font-size: 24px;
     text-align: center;
@@ -306,9 +316,9 @@ button {
     justify-content: center;
     align-items: center;
     width: 100px;
-    margin: 20px;
+    margin: 1px;
     gap: 20px;
-    padding: 2rem;
+   
   }
 
   .hide-on-mobile {
@@ -327,7 +337,7 @@ button {
 
   .Navbar {
     display: flex;
-    margin: auto;
+    
     justify-content: center;
     align-items: center;
     position: relative;
@@ -338,9 +348,9 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: transparent;
     position: absolute;
-    top: 200px;
+    top: 100px;
     right: 100px;
     width: 200px;
     margin-bottom: 200px;
@@ -413,10 +423,7 @@ button {
     flex-direction: column;
   }
 
-  .header {
-    display: none;
-  }
-
+  
   .menu-one,
   .menu-two {
     display: none;
@@ -437,7 +444,7 @@ button {
 @media (min-width: 481px) and (max-width: 1024px) {
   .header {
     position: fixed;
-    padding: 0 20px;
+    
     height: auto;
     display: flex;
     flex-direction: row; 
@@ -464,6 +471,7 @@ button {
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 10px;
+    background-color: transparent;
   }
 
   .authentication {
@@ -490,9 +498,9 @@ button {
     justify-content: center;
     align-items: center;
     width: 100px;
-    margin: 20px;
+    
     gap: 100px;
-    padding: 2rem;
+    
   }
   .mobile-icons{
     margin-left: 80px;
@@ -514,7 +522,7 @@ button {
 
   .Navbar {
     display: flex;
-    margin: auto;
+   
     justify-content: center;
     align-items: center;
     position: relative;
